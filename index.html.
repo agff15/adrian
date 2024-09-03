@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadson o Ferinha</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .video-catalog {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .video-item {
+            flex: 1 1 calc(50% - 1rem);
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .video-item iframe {
+            width: 100%;
+            height: 200px;
+        }
+        .video-item h2 {
+            font-size: 1.2rem;
+            margin: 0;
+            padding: 0.5rem;
+            background: #f4f4f4;
+        }
+        .video-item p {
+            padding: 0 0.5rem;
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            .video-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Nadson o Ferinha</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="video-catalog">
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/CE9LGI9EXIA" title="posta aí" allowfullscreen></iframe>
+                <h2>posta aí</h2>
+                <p>posta aí.</p>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/9dX3IcDX0oI" title="sete bilhões" allowfullscreen></iframe>
+                <h2>sete bilhões</h2>
+                <p>sete bilhões.</p>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/M9aJ2PxuDio" title="como um beijo" allowfullscreen></iframe>
+                <h2>como um beijo</h2>
+                <p>como um beijo.</p>
+            </div>
+            <div class="video-item">
+                <iframe src="https://www.youtube.com/embed/BUF1wL69y1g" title="enxoval" allowfullscreen></iframe>
+                <h2>enxoval</h2>
+                <p>enxoval.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
